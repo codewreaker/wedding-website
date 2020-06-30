@@ -5,4 +5,3 @@ import "./node_modules/slick-carousel/slick/slick-theme.scss";
 
 // All Css Here
 import './node_modules/bootstrap/dist/css/bootstrap.min.css';
-import "./public/assets/css/animate.css";
