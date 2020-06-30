@@ -11,9 +11,11 @@ class Header extends Component{
         this.stickyHeader = this.stickyHeader.bind(this);
 
        //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-        window.addEventListener('load', function() {
+       if (typeof window !== undefined) {
+        window.addEventListener('load', function () {
             console.log('All assets are loaded');
         })
+    }
         
     }
     menuTrigger() {
