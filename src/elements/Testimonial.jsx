@@ -1,6 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import BridalTeam from '../api/bridalTeam.json'
+import BridalTeam from '../content/bridalTeam.json'
 
 const Testimonial = () => {
     return (

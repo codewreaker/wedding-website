@@ -1,7 +1,4 @@
-var plugins = [{
-      plugin: require('/Users/israelagyeman-prempeh/Dev-Ops/wedding-website/node_modules/gatsby-plugin-css-system/gatsby-ssr'),
-      options: {"plugins":[]},
-    }]
+var plugins = []
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

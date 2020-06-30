@@ -10,7 +10,7 @@ import Testimonial from "../elements/Testimonial";
 import BlogContent from "../elements/blog/BlogContent";
 import Giving from "../elements/Giving";
 import Helmet from "../components/common/Helmet";
-import timelineRows from "../api/timeline.json";
+import timelineRows from "../content/timeline.json";
 import BrandTwo from "../elements/BrandTwo";
 
 const SlideList = [
