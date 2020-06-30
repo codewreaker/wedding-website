@@ -12,7 +12,7 @@ class Header extends Component {
         this.stickyHeader = this.stickyHeader.bind(this);
 
         //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-        if (typeof window !== undefined) {
+        if (typeof window !== `undefined`) {
             window.addEventListener('load', function () {
                 console.log('All assets are loaded');
             })
@@ -30,14 +30,16 @@ class Header extends Component {
     stickyHeader() { }
 
     render() {
-        window.addEventListener('scroll', function () {
-            var value = window.scrollY;
-            if (value > 100) {
-                document.querySelector('.header--fixed').classList.add('sticky')
-            } else {
-                document.querySelector('.header--fixed').classList.remove('sticky')
-            }
-        });
+        if (typeof window !== `undefined`) {
+            window.addEventListener('scroll', function () {
+                var value = window.scrollY;
+                if (value > 100) {
+                    document.querySelector('.header--fixed').classList.add('sticky')
+                } else {
+                    document.querySelector('.header--fixed').classList.remove('sticky')
+                }
+            });
+        }
 
         var elements = document.querySelectorAll('.has-droupdown > a');
         for (var i in elements) {
