@@ -32,13 +32,6 @@ const image6 = "/assets/images/bg/paralax/bg-image-6.png";
 
 const image7 = "/assets/images/bg/paralax/bg-image-7.jpg";
 
-const goldFoilStyle = {
-    background: '-webkit-linear-gradient(transparent, transparent), url(assets/images/goldFoilPattern.png) repeat',
-    color: '#c3a343',
-    WebkitTextFillColor: 'transparent',
-    WebkitBackgroundClip: 'text'
-}
-
 
 const PortfolioList = [
     {
