@@ -41,7 +41,7 @@ class Header extends Component {
             });
         }
 
-        var elements = document.querySelectorAll('.has-droupdown > a');
+        var elements = typeof document !== `undefined` ? document.querySelectorAll('.has-droupdown > a'): null;
         for (var i in elements) {
             if (elements.hasOwnProperty(i)) {
                 elements[i].onclick = function () {
