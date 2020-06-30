@@ -1,4 +1,4 @@
-[
+export default [
     {
         "img":"/assets/images/about/story-1.png",
         "iconImg": "/assets/images/about/timeline-3.svg",
