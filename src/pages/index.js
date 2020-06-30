@@ -247,7 +247,7 @@ const Paralax = () => {
             <div className="row">
                 <div className="col-lg-12">
                     <hr />
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'center', padding: '10px' }}>
                         <h4 className="title">Our Vendors</h4>
                         <p className="description">So many companies have helped us in making our dream come true, too many to list; However
                                     we will like to throw light on a few companies that went the extra mile </p>
