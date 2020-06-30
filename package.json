@@ -16,6 +16,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.23.12",
+    "gatsby-plugin-css-system": "^0.1.0",
     "gatsby-plugin-sass": "^2.1.29",
     "google-map-react": "^1.1.6",
     "node-sass": "^4.13.1",
