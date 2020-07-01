@@ -18,7 +18,7 @@ class Footer extends Component {
                                 <div className="footer-left">
                                     <div className="inner">
                                         <span>Have Any Messages For Us?</span>
-                                        <h2> 💑  Would <br /> ❤ To Hear</h2>
+                                        <h2> We Would <br /> ❤ To Hear</h2>
                                         <a className="rn-button-style--2" href="/contact">
                                             <span>Drop a Note</span>
                                         </a>

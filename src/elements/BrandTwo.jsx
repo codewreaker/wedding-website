@@ -9,7 +9,7 @@ class BrandTwo extends Component{
                         <a target='_blank' href="http://www.georgedickson.co.uk/"><img src="/assets/images/brand/georgedickson.png" alt="Logo Images"/></a>
                     </li>
                     <li>
-                    <a target='_blank' href="https://jotphotography.zenfolio.com/"><img src="/assets/images/brand/jot.jpeg" alt="Logo Images"/></a>
+                    <a target='_blank' href="http://www.jotmms.com/photography/"><img src="/assets/images/brand/jot.jpeg" alt="Logo Images"/></a>
                     </li>
                     <li>
                     <a target='_blank' href="http://www.wovenafrica.com/"><img src="/assets/images/brand/woven.jpeg" alt="Logo Images"/></a>
