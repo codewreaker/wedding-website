@@ -98,8 +98,7 @@ const Paralax = () => {
                                             We know you would have all loved to be a part of our special day today, however 2020 might not have allowed you to be here with us 🤦🏾‍♂️,
                                             but 🦠 can't stop love. In this light we are sharing our special day with you through this medium 🥰. Here you will be able to <a href="/watch"> Watch our Special Day</a>, Get to
                                            <a href="#about"> know our Story 🤵🏾👰🏾</a> and we have provided alternative forms of <a href="#giving"> gifting </a> 
-                                           if you had planned to bless us with any. Either through card payment, direct transfer, an amazon or prezola gifting option to make the process convenient 👍🏾
-                                           and to ensure it reaches us directly. 🚚</p>
+                                           if you had planned to bless us with any. Either through card payment, direct transfer, an amazon or prezola gifting option to make the process convenient and to ensure 🚚 to us directly</p>
                                     </div>
                                 </div>
                             </div>
