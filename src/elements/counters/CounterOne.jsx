@@ -57,7 +57,7 @@ const CounterOne = () => {
         <Fragment>
             <div className="row">
                 {Data.map((value, index) => (
-                    <div className="counterup_style--1 col-lg-3 col-md-3 col-sm-6 col-12" key={index}>
+                    <div className="counterup_style--1 col-lg-4 col-md-4 col-sm-12" key={index}>
                         <h5 className="counter">
                             <VisibilitySensor onChange={onVisibilityChange} offset={{ top: 10 }} delayedCall>
                                 <CountUp end={didViewCountUp ? value.countNum : 0} />

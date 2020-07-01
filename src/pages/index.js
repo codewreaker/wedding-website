@@ -74,7 +74,7 @@ const Paralax = () => {
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             <div className={'actionBtns'}>
                                                 {value.buttonText ? <a className="rn-button-style--2 btn-solid" href={`${value.buttonLink}`}>{value.buttonText}</a> : ''}
-                                                {value.button2Text ? <a className="rn-button-style--2 btn-solid" href={`${value.button2Link}`}>{value.button2Text}</a>: ''}
+                                                {value.button2Text ? <a className="rn-button-style--2 btn-solid" href={`${value.button2Link}`}>{value.button2Text}</a> : ''}
                                             </div>
                                         </div>
                                     </div>
@@ -86,9 +86,31 @@ const Paralax = () => {
             </div>
             {/* End Slider Area   */}
 
+            <div className="about-area ptb--50 bg_color--8">
+                <div className="about-wrapper">
+                    <div className="container">
+                        <div className="row row--35 align-items-center">
+                            <div className="col-lg-12">
+                                <div className="about-inner inner">
+                                    <div className="section-title">
+                                        {/* <h2 className="title">Our Story</h2> */}
+                                        <p className="description">
+                                            We know you would have all loved to be a part of our special day today, however 2020 might not have allowed you to be here with us 🤦🏾‍♂️,
+                                            but 🦠 can't stop love. In this light we are sharing our special day with you through this medium 🥰. Here you will be able to <a href="/watch"> Watch our Special Day</a>, Get to
+                                           <a href="#about"> know our Story 🤵🏾👰🏾</a> and we have provided alternative forms of <a href="#giving"> gifting </a> 
+                                           if you had planned to bless us with any. Either through card payment, direct transfer, an amazon or prezola gifting option to make the process convenient 👍🏾
+                                           and to ensure it reaches us directly. 🚚</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Start About Area */}
             <Parallax className="rn-paralax-service" bgImage={image1} strength={1000} >
-                <div className="about-area ptb--120 bg_color--5" id={'about'}>
+                <div className="about-area ptb--30 bg_color--5" id={'about'}>
                     <div className="about-wrapper">
                         <div className="container">
                             <div className="row row--35 align-items-center">
@@ -96,7 +118,6 @@ const Paralax = () => {
                                     <div className="about-inner inner">
                                         <div className="section-title">
                                             <h2 className="title">Our Story</h2>
-                                            <p className="description">This is the story all about how our life got's twisted upside don __Will Smith <a href="#alteration">alteration</a> in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p>
                                         </div>
                                         <div className={'ptb--30'}></div>
                                         {/* First Description */}
@@ -206,14 +227,6 @@ const Paralax = () => {
             </Parallax>
             {/* End Testimonial Area */}
 
-            {/* Start Blog Area */}
-            <div className="blog-area ptb--120" data-black-overlay="6" id={'blog'}>
-                Advice Us
-                We know deep in our hearts you would have loved to be present, but since you couldnt make it
-                We want you to share a message of love and advice with us
-                </div>
-
-            {/* End Blog Area */}
 
             {/* Start Giving Area */}
             <Parallax className="rn-brand-area brand-separation ptb--120" strength={1000}>

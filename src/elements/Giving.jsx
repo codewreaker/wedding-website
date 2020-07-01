@@ -4,7 +4,7 @@ const monzoLink = 'https://monzo.me/israelagyemanprempeh/50.00?d=Your%20presence
 const Giving = ({ branstyle }) => {
     const givingOptions = [
         { img: "/assets/images/brand/payments.png", url: monzoLink, alt: 'Cash Gift', func: console.log },
-        { img: "/assets/images/brand/amazon.png", url: 'https://www.amazon.com/wedding/share/izzyninshi', alt: 'Amazon', func: console.log },
+        { img: "/assets/images/brand/amazon.png", url: 'https://www.amazon.co.uk/wedding/share/izzynshilovely', alt: 'Amazon', func: console.log },
         { img: "/assets/images/brand/zola.png", url: 'https://prezola.com/wishlists/10224144/', alt: 'Zola', func: console.log },
         { img: "/assets/images/brand/brand-01.png", url: '#', alt: 'In Person', func: console.log }
     ]
