@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from 'gatsby';
 
-const monzoLink = 'https://monzo.me/israelagyemanprempeh/50.00?d=Your%20presence%20at%20our%20wedding%20is%20all%20that%20we%20wished%20for,%20we%20are%20grateful%20for%20this%20cash%20donation%20toward%20our%20new%20journey.%20Please%20do%20adjust%20the%20amount%20as%20needed'
+const payments = '/payments';
 const Giving = ({ branstyle, func }) => {
     const givingOptions = [
-        { img: "/assets/images/brand/payments.png", url: monzoLink, alt: 'Cash Gift', func: console.log },
+        { img: "/assets/images/brand/payments.png", url: payments, alt: 'Cash Gift', func: console.log },
         { img: "/assets/images/brand/bank.png", url: '#giving', alt: 'In Person', func:(e)=>{
             e.preventDefault()
             func({bool:true, desc: 'Account Details'}) }
@@ -16,7 +17,7 @@ const Giving = ({ branstyle, func }) => {
             <ul className={`brand-list ${branstyle}`}>
                 {givingOptions.map(({ img, url, alt, func }, idx) => (
                     <li key={`giving-${idx}`} onClick={(e)=>func(e, url)}>
-                        <a href={url} target="__blank"><img src={img} alt={alt} /></a>
+                        <Link to={url} target="_blank"><img src={img} alt={alt} /></Link>
                     </li>
                 ))}
             </ul>

@@ -11,7 +11,6 @@ class Header extends Component {
         this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
         this.stickyHeader = this.stickyHeader.bind(this);
 
-        //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
         if (typeof window !== `undefined`) {
             window.addEventListener('load', function () {
                 console.log('All assets are loaded');

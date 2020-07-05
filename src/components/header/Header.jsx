@@ -63,7 +63,7 @@ class Header extends Component {
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">Our Story</a></li>
                                 <li><a href="#portfolio">Wedding</a></li>
-                                <li><a href="#bridalteam">Team</a></li>
+                                <li><a href="#bridalteam">Bridal Team</a></li>
                                 <li><a href="#giving">Gifting</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </Scrollspy>

@@ -18,7 +18,7 @@ const SlideList = [
 const sliderImage = "/assets/images/bg/main_bg_img.png";
 
 const style={
-    fontSize: '4em',
+    fontSize: '6em',
     fontFamily: 'Snell Roundhand, fantasy',
     fontWeight: 'bolder',
     textAlign: 'center',
@@ -40,7 +40,7 @@ const Thanks = ({location}) => {
                     {SlideList.map((_unused, index) => (
                         <div className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center" key={index} id={'home'}>
                             <div className="container">
-                                <h1 style={style}>{`Thank You ${decodeURI(name)} For Dropping Us A Note`}</h1>
+                                <h1 style={style}>{`Thank You  for Your Donation We Really Appreciate it`}</h1>
                             </div>
                         </div>
                     ))}
