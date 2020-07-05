@@ -57,9 +57,7 @@ class Header extends Component {
                 <div className="header-wrapper">
                     <div className="header-left d-flex align-items-center">
                         <div className="logo">
-                            <a href={this.props.homeLink}>
-                                {logoUrl}
-                            </a>
+                        <a href={'/'}>{logoUrl}</a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
                             <Scrollspy className="mainmenu" items={['home', 'about', 'portfolio', 'bridalteam', 'blog', 'giving', 'contact']} currentClassName="is-current" offset={-200}>
