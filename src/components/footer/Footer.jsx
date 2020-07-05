@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'gatsby'
 
 class Footer extends Component {
     render() {
@@ -12,9 +13,9 @@ class Footer extends Component {
                                     <div className="inner">
                                         <span>Have Any Messages For Us?</span>
                                         <h2> We Would <br /> ❤ To Hear</h2>
-                                        <a className="rn-button-style--2" href="/contact">
+                                        <Link className="rn-button-style--2" to="/contact">
                                             <span>Drop a Note</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

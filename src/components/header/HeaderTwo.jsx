@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import {Link} from 'gatsby'
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 
@@ -57,19 +57,19 @@ class Header extends Component {
                 <div className="header-wrapper">
                     <div className="header-left d-flex align-items-center">
                         <div className="logo">
-                        <a href={'/'}>{logoUrl}</a>
+                        <Link to={'/'}>{logoUrl}</Link>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
                             <Scrollspy className="mainmenu" items={['home', 'about', 'portfolio', 'bridalteam', 'blog', 'giving', 'contact']} currentClassName="is-current" offset={-200}>
-                                <li><a href="/">Home</a></li>
+                                <li><Link to="/">Home</Link></li>
                             </Scrollspy>
                         </nav>
                     </div>
                     <div className="header-right">
                         <div className="header-btn">
-                            <a className="rn-btn" href="#giving">
+                            <Link className="rn-btn" to="/#giving">
                                 <span>Gifting</span>
-                            </a>
+                            </Link>
                         </div>
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">

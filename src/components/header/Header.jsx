@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FiX, FiMenu } from "react-icons/fi";
-import Scrollspy from 'react-scrollspy'
+import Scrollspy from 'react-scrollspy';
+import {Link} from 'gatsby'
 
 class Header extends Component {
     constructor(props) {
@@ -55,7 +56,7 @@ class Header extends Component {
                 <div className="header-wrapper">
                     <div className="header-left d-flex align-items-center">
                         <div className="logo">
-                            <a href={'/'}>{logoUrl}</a>
+                            <Link to={'/'}>{logoUrl}</Link>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
                             <Scrollspy className="mainmenu" items={['home', 'about', 'portfolio', 'bridalteam', 'blog', 'giving', 'contact']} currentClassName="is-current" offset={-200}>
@@ -63,7 +64,6 @@ class Header extends Component {
                                 <li><a href="#about">Our Story</a></li>
                                 <li><a href="#portfolio">Wedding</a></li>
                                 <li><a href="#bridalteam">Team</a></li>
-                                <li><a href="#blog">Blog</a></li>
                                 <li><a href="#giving">Gifting</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </Scrollspy>

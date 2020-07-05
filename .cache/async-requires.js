@@ -7,6 +7,7 @@ exports.components = {
   "component---src-pages-app-js": () => import("./../src/pages/app.js" /* webpackChunkName: "component---src-pages-app-js" */),
   "component---src-pages-contact-js": () => import("./../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-thanks-js": () => import("./../src/pages/thanks.js" /* webpackChunkName: "component---src-pages-thanks-js" */),
   "component---src-pages-watch-js": () => import("./../src/pages/watch.js" /* webpackChunkName: "component---src-pages-watch-js" */)
 }
 

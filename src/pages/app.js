@@ -14,6 +14,8 @@ import Helmet from "../components/common/Helmet";
 import timelineRows from "../content/timeLine";
 import BrandTwo from "../elements/BrandTwo";
 
+import { Link } from 'gatsby'
+
 const SlideList = [
     {
         textPosition: 'text-center',
@@ -67,8 +69,8 @@ const Paralax = () => {
                                             {<img src="/assets/images/logo/monogram-gold-date.png" alt="MonoGram" />}
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             <div className={'actionBtns'}>
-                                                {value.buttonText ? <a className="rn-button-style--2 btn-solid" href={`${value.buttonLink}`}>{value.buttonText}</a> : ''}
-                                                {value.button2Text ? <a className="rn-button-style--2 btn-solid" href={`${value.button2Link}`}>{value.button2Text}</a> : ''}
+                                                {value.buttonText ? <Link className="rn-button-style--2 btn-solid" to={`${value.buttonLink}`}>{value.buttonText}</Link> : ''}
+                                                {value.button2Text ? <Link className="rn-button-style--2 btn-solid" to={`${value.button2Link}`}>{value.button2Text}</Link> : ''}
                                             </div>
                                         </div>
                                     </div>
@@ -89,8 +91,8 @@ const Paralax = () => {
                                     <div className="section-title">
                                         <p className="description">
                                             We know you would have all loved to be a part of our special day today. however 2020 might not have allowed you to be here with us 🤦🏾‍♂️
-                                            but 🦠 can't stop love. In this light we are sharing our special day with you through this medium 🥰. Here you will be able to <a href="/watch"> Watch our Special Day</a>, Get to
-                                           <a href="#about"> know our Story 🤵🏾👰🏾</a>. We have provided alternative forms of <a href="#giving"> gifting </a> such as monetary via
+                                            but 🦠 can't stop love. In this light we are sharing our special day with you through this medium 🥰. Here you will be able to <Link to="/watch"> Watch our Special Day</Link>, Get to
+                                           <Link to="#about"> know our Story 🤵🏾👰🏾</Link>. We have provided alternative forms of <Link to="/#giving"> gifting </Link> such as monetary via
                                            card payment or direct transfer or you could order something from our wedding gift list via Amazon or Prezola if you wish to do so 🚚.</p>
                                     </div>
                                 </div>
@@ -143,9 +145,9 @@ const Paralax = () => {
                 <div className="ptb--40 bg_color--8" style={{textAlign: 'center'}}>
                     <div className="container">
                         <div className="col-lg-12">
-                            <a className="rn-button-style--2 btn-solid" href={'/contact'}>
+                            <Link className="rn-button-style--2 btn-solid" to={'/contact'}>
                                 {"Drop Us a Goodwill Message Or Share Some Handy Advice of Love"}
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -194,7 +196,7 @@ const Paralax = () => {
                                         <div className="content">
                                             <div className="inner">
                                                 <p>{value.category}</p>
-                                                <h4><a href="/portfolio-details">{value.title}</a></h4>
+                                                <h4><Link to="/portfolio-details">{value.title}</Link></h4>
                                                 <div className="portfolio-button">
                                                     <a className="rn-btn" onClick={() => setIsModalOpen({ bool: true, desc: value.title })}>Details</a>
                                                 </div>
