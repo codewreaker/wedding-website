@@ -21,7 +21,6 @@ const SlideList = [
     }
 ]
 
-const givingLink = '/#giving'
 
 const Watch = () => {
     const [isOpen, setIsOpen] = useState(false);
