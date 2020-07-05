@@ -14,17 +14,20 @@ const ContactOne = () => {
             .join("&");
     }
 
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const res = await fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "advisory-form", ...state })
-        });
-        (res.status === 200) ? navigate(form.getAttribute('action')) : alert('Something Went Wrong')
-    };
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const form = e.target
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': form.getAttribute('name'),
+            ...state,
+          }),
+        })
+          .then(() => navigate(form.getAttribute('action')))
+          .catch((error) => alert(error))
+      }
 
     return (
         <div>
