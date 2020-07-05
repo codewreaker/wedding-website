@@ -1,6 +1,5 @@
 import React, { useRef, useContext, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-// import styled, { keyframes } from "styled-components";
 
 const Context = React.createContext();
 

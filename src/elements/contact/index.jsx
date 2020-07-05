@@ -18,6 +18,7 @@ const ContactOne = () => {
 
 
     const handleSubmit = async (e) => {
+        e.preventDefault();
         const res = await fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -37,7 +38,6 @@ const ContactOne = () => {
             });
 
         //setState(defaultForm)
-        e.preventDefault();
     };
 
     return (
