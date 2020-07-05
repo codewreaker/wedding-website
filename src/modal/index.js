@@ -41,5 +41,3 @@ export function Modal({ onClose, buttonText, children, ...props }) {
 const Container = ({ children, ...props }) => <div id="modal-context" {...props}>{children}</div>
 const Overlay = ({ children, ...props }) => <div {...props} className={'modal-overlay fade-in'}>{children}</div>
 const Dialog = ({ children, ...props }) => <div {...props} className={'modal-dialog'}>{children}</div>
-
-// const fadeIn = keyframes`from { opacity: 0; }`;

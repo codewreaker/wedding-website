@@ -44,7 +44,7 @@ const Paralax = () => {
                     <h2 className="title">{isModalOpen.desc}</h2>
                     <div className={'ptb--30'}>
                         <p className="description">
-                            {Descriptions[isModalOpen.desc].split('\n').map((str, idx) => (<span key={idx}>{ str } <br></br></span>))}
+                            {Descriptions[isModalOpen.desc].split('\n').map((str, idx) => (<span key={idx}>{str} <br></br></span>))}
                         </p>
                     </div>
                 </Modal>
@@ -137,6 +137,15 @@ const Paralax = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="ptb--40 bg_color--8" style={{textAlign: 'center'}}>
+                    <div className="container">
+                        <div className="col-lg-12">
+                            <a className="rn-button-style--2 btn-solid" href={'/contact'}>
+                                {"Drop Us a Goodwill Message Or Share Some Handy Advice of Love"}
+                            </a>
                         </div>
                     </div>
                 </div>
