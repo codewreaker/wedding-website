@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { navigate } from 'gatsby-link'
 
-const defaultForm = {
-    rnName: '',
-    rnMessage: ''
-}
-
 const ContactOne = () => {
-    const [state, setState] = useState(defaultForm)
+    const [state, setState] = useState({})
     const encode = (data) => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -26,20 +21,24 @@ const ContactOne = () => {
             }),
         })
             .then(() => navigate(form.getAttribute('action')))
-            .catch((error) => alert(error))
+            .catch((error) => alert(error));
     }
+
+    const handleChange = (e) => {
+        setState({ ...state, [e.target.name]: e.target.value })
+      }
 
     return (
         <div>
             <form
-                action={`/thanks?name=${state.rnName}`}
+                action={`/thanks?name=${state.name}`}
                 className="contact-form--1"
                 name="advisory-form"
                 method="post"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
-                >
+            >
                 <input type="hidden" name="form-name" value="advisory-form" />
                 <div className="container">
                     <div className="row row--35 align-items-start">
@@ -59,7 +58,7 @@ const ContactOne = () => {
                                         name="name"
                                         id="item01"
                                         value={state.rnName}
-                                        onChange={({ target }) => { setState({ ...state, ...{ rnName: target.value } }) }}
+                                        onChange={handleChange}
                                         placeholder="Your Name *"
                                     />
                                 </label>
@@ -70,7 +69,7 @@ const ContactOne = () => {
                                         id="item04"
                                         name="message"
                                         value={state.rnMessage}
-                                        onChange={({ target }) => { setState({ ...state, ...{ rnMessage: target.value } }) }}
+                                        onChange={handleChange}
                                         placeholder="Your Message"
                                     />
                                 </label>

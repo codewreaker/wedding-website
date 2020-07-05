@@ -18,7 +18,7 @@ const SlideList = [
 const sliderImage = "/assets/images/bg/main_bg_img.png";
 
 const style={
-    fontSize: '8em',
+    fontSize: '6em',
     fontFamily: 'Snell Roundhand, fantasy',
     fontWeight: 'bolder',
     textAlign: 'center',
