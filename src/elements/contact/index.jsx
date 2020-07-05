@@ -35,13 +35,13 @@ const ContactOne = () => {
                 message: '',
                 show: false
             });
-            e.preventDefault();
+        e.preventDefault();
         //setState(defaultForm)
     };
 
     return (
         <div>
-            <form className="contact-form--1" name="advisory-form" method="post"
+            <form onSubmit={handleSubmit}  className="contact-form--1" name="advisory-form" method="post"
                 data-netlify={true} data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="advisory-form" />
                 <div className="container">
@@ -77,7 +77,7 @@ const ContactOne = () => {
                                         placeholder="Your Message"
                                     />
                                 </label>
-                                <button onClick={handleSubmit} className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit</button>
+                                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit</button>
                             </div>
                         </div>
                         <div className="ptb--20 col-lg-6 order-2 order-lg-1">
