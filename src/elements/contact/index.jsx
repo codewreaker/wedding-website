@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { FaSatellite } from "react-icons/fa";
 
+const defaultForm = {
+    rnName: '',
+    rnMessage: ''
+}
+
 const ContactOne = ({ contactImages }) => {
-    const [state, setState] = useState({
-        rnName: '',
-        rnMessage: '',
-    })
+    const [state, setState] = useState(defaultForm)
+
+    const [responseMessage, setResponseMessage] = useState({ message: '', show: false })
 
     const encode = (data) => {
         return Object.keys(data)
@@ -14,16 +18,28 @@ const ContactOne = ({ contactImages }) => {
     }
 
 
-    const handleSubmit = e => {
-        fetch("/", {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const res = await fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "advisory-form", ...state })
         })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
+        // .then((response) => (response))
+        // .catch(error => alert(error));
+        const tempName = state.rnName;
 
-        e.preventDefault();
+        (res.status === 200) ?
+            setResponseMessage({
+                message: `Thank You ${tempName} For Your Message ❤️`,
+                show: true
+            }) :
+            setResponseMessage({
+                message: '',
+                show: false
+            });
+
+        setState(defaultForm)
     };
 
     return (
@@ -60,7 +76,7 @@ const ContactOne = ({ contactImages }) => {
                                         id="item04"
                                         name="message"
                                         value={state.rnMessage}
-                                        onChange={({ target }) => { setState({...state, ...{ rnMessage: target.value }}) }}
+                                        onChange={({ target }) => { setState({ ...state, ...{ rnMessage: target.value } }) }}
                                         placeholder="Your Message"
                                     />
                                 </label>
@@ -69,8 +85,7 @@ const ContactOne = ({ contactImages }) => {
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2">
                             <div className="thumbnail mb_md--30 mb_sm--30">
-                                <img style={{ borderRadius: '50%', border: '2px solid #ee076e' }}
-                                    src={`${contactImages}`} alt="trydo" />
+                                {responseMessage.show && <h3 style={{color: 'green'}}>{responseMessage.message}</h3>}
                             </div>
                         </div>
                     </div>

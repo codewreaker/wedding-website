@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import Header from "../components/header/Header";
+import Header from "../components/header/HeaderTwo";
 import Helmet from "../components/common/Helmet";
 import BrandTwo from "../elements/BrandTwo";
 

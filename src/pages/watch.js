@@ -28,7 +28,7 @@ const Watch = () => {
     const openModal = () => {
         setIsOpen(true)
     }
-    console.log(isModalOpen)
+
     return (
         <Fragment>
             {(isModalOpen.bool) && (
