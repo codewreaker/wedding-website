@@ -18,21 +18,28 @@ const ContactOne = () => {
         e.preventDefault()
         const form = e.target
         fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encode({
-            'form-name': form.getAttribute('name'),
-            ...state,
-          }),
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode({
+                'form-name': form.getAttribute('name'),
+                ...state,
+            }),
         })
-          .then(() => navigate(form.getAttribute('action')))
-          .catch((error) => alert(error))
-      }
+            .then(() => navigate(form.getAttribute('action')))
+            .catch((error) => alert(error))
+    }
 
     return (
         <div>
-            <form action={`/thanks?name=${state.rnName}`} onSubmit={handleSubmit} className="contact-form--1" name="advisory-form" method="post"
-                data-netlify={true} data-netlify-honeypot="bot-field">
+            <form
+                action={`/thanks?name=${state.rnName}`}
+                className="contact-form--1"
+                name="advisory-form"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                >
                 <input type="hidden" name="form-name" value="advisory-form" />
                 <div className="container">
                     <div className="row row--35 align-items-start">
