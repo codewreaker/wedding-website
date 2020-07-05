@@ -90,9 +90,9 @@ const Paralax = () => {
                                 <div className="about-inner inner">
                                     <div className="section-title">
                                         <p className="description">
-                                            We know you would have all loved to be a part of our special day today. however 2020 might not have allowed you to be here with us 🤦🏾‍♂️
-                                            but 🦠 can't stop love. In this light we are sharing our special day with you through this medium 🥰. Here you will be able to <Link to="/watch"> Watch our Special Day</Link>, Get to
-                                           <Link to="#about"> know our Story 🤵🏾👰🏾</Link>. We have provided alternative forms of <Link to="/#giving"> gifting </Link> such as monetary via
+                                            We know you would have all loved to be a part of our special day today. However, 2020 might not have allowed you to be here with us 🤦🏾‍♂️
+                                            but 🦠 can't stop love. In this light we are sharing our special day with you through this medium 🥰. Here you will be able to <Link to="/watch"> Watch our Special Day</Link> and get to
+                                           <Link to="#about">Know our Story 🤵🏾👰🏾</Link>. We have provided alternative forms of <Link to="/#giving"> gifting </Link> such as monetary via
                                            card payment or direct transfer or you could order something from our wedding gift list via Amazon or Prezola if you wish to do so 🚚.</p>
                                     </div>
                                 </div>
