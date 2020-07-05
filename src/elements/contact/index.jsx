@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { navigate } from 'gatsby-link'
+import { navigate } from 'gatsby-link';
+
+function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
 
 const ContactOne = () => {
     const [state, setState] = useState({})
-    const encode = (data) => {
-        return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-            .join("&");
-    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -56,8 +57,6 @@ const ContactOne = () => {
                                     <input
                                         type="text"
                                         name="name"
-                                        id="item01"
-                                        value={state.rnName}
                                         onChange={handleChange}
                                         placeholder="Your Name *"
                                     />
@@ -66,14 +65,12 @@ const ContactOne = () => {
                                 <label htmlFor="item04">
                                     <textarea
                                         type="text"
-                                        id="item04"
                                         name="message"
-                                        value={state.rnMessage}
                                         onChange={handleChange}
                                         placeholder="Your Message"
                                     />
                                 </label>
-                                <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit</button>
+                                <button className="rn-button-style--2 btn-solid" type="submit">Submit</button>
                             </div>
                         </div>
                     </div>
