@@ -49,7 +49,7 @@ class Header extends Component {
                 }
             }
         }
-        const { logo, color = 'default-color' } = this.props;
+        const { color = 'default-color' } = this.props;
         const logoUrl = <img style={{ width: '10em' }} src="/assets/images/logo/monogram-gold.png" alt="MonoGram" />
         return (
             <header className={`header-area header-style-two header--fixed ${color}`}>

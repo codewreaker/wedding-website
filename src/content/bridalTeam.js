@@ -24,7 +24,7 @@ export default [
             "img": "/assets/images/client/kristen.jpeg"
         },
         {
-            "bio": "As an elder brother, my role was to make sure my lil bro walks this journey mnowing I got his back. When I am not busy being a big brother I like to found Tech companies \n fun fact this part was written by Prophet because I refused to do a write-up 😂😂.",
+            "bio": "As an elder brother, my role was to make sure my lil bro walks this journey mnowing I got his back. When I am not busy being a big brother I like to start tech companies \n fun fact this part was written by Prophet because I refused to do a write-up 😂😂.",
             "name": "Nana",
             "role": "Groomsman",
             "img": "/assets/images/client/nana.jpg"
@@ -40,6 +40,12 @@ export default [
             "name": "Collin",
             "role": "Groomsman",
             "img": "/assets/images/client/collin.jpg"
+        },
+        {
+            "bio": "I've seen this relationship from the start and it is freat to see this Promise finally resolve (The nerds will get it), here to support Israel on his special day",
+            "name": "Peter",
+            "role": "Groomsman",
+            "img": "/assets/images/client/peter.jpg"
         },
         {
             "bio": "'I am not African because I was born in Africa, I am African because Africa was born in me'. - Dr Kwame Nkrumah. If you know me, you know the zeal I have when it comes being a part of creating a new narrative of Africa, by way of Ghana. I am always ready to boldly uphold and defend my motherland and help out which ever way I can.",

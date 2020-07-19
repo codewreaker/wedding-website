@@ -9,7 +9,9 @@ import {getLatestLive, getVideoDetails} from '../api/youtube';
 import { Descriptions } from '../content/descriptions';
 import { Modal } from "../modal"
 import Giving from "../elements/Giving";
-videoTagString({ src: '/assets/images/service/video.mp4', poster: '/assets/images/bg/bg-image-24.jpg' })
+const vidUrl = '/assets/video/izzynshivid.mp4';
+const posterUrl = '/assets/images/bg/bg-image-4.png'
+videoTagString({ src: vidUrl, poster: posterUrl})
 
 const Watch = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +77,7 @@ const Watch = () => {
                         </div>
                     </div>
                     <div className="video-background">
-                        <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`} src={`${"/assets/images/service/video.mp4"}`} poster={`${"/assets/images/bg/bg-image-24.jpg"}`} />
+                        <VideoTag autoPlay={`${true}`} muted={`${true}`} playsInline={`${true}`} loop={`${true}`} src={`${vidUrl}`} poster={`${posterUrl}`} />
                     </div>
                 </div>
                 {/* End Single Slide */}

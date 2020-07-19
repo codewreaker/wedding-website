@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PageHelmet from "../components/common/Helmet";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import {  FiLayers  } from "react-icons/fi";
 import { FaCcPaypal, FaCreditCard } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
@@ -21,12 +21,12 @@ const ServiceList = [
         description: "Use this link if you're in the UK, it is fast and charges no fee",
         url: 'https://monzo.me/israelagyemanprempeh/50.00?d=Your%20presence%20at%20our%20wedding%20is%20all%20that%20we%20wished%20for,%20we%20are%20grateful%20for%20this%20cash%20donation%20toward%20our%20new%20journey.%20Please%20do%20adjust%20the%20amount%20as%20needed'
     },
-    // {
-    //     icon: <FaCreditCard />,
-    //     title: 'Cards',
-    //     description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.',
-    //     url: '/cardpayments'
-    // }
+    {
+        icon: <FaCreditCard />,
+        title: 'Cards',
+        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.',
+        url: '/cardpayments'
+    }
 ]
 class Service extends Component{
     render(){
@@ -39,7 +39,7 @@ class Service extends Component{
                     <div className="container">
                         <div className="row creative-service">
                             {ServiceList.map( (val , i) => (
-                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
+                                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" key={i}>
                                     <Link target="_blank" to={val.url}>
                                         <div className="service service__style--2">
                                             <div className="icon">

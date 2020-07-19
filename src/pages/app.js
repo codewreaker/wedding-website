@@ -142,7 +142,7 @@ const Paralax = () => {
                         </div>
                     </div>
                 </div>
-                <div className="ptb--40 bg_color--8" style={{textAlign: 'center'}}>
+                <div className="ptb--40 bg_color--8" style={{ textAlign: 'center' }}>
                     <div className="container">
                         <div className="col-lg-12">
                             <Link className="rn-button-style--2 btn-solid" to={'/contact'}>
@@ -257,8 +257,10 @@ const Paralax = () => {
                     <hr />
                     <div style={{ textAlign: 'center', padding: '10px' }}>
                         <h4 className="title">Service Spotlight</h4>
-                        <p className="description">So many companies have helped us in making our dream come true, too many to list; However
-                                    we will like to throw light on a few companies that went the extra mile </p>
+                        <p className="description">
+                            So many companies have helped us in making our dream come true, too many to list; However
+                            we will like to throw light on a few companies that went the extra mile
+                        </p>
                     </div>
                     <BrandTwo />
                 </div>
