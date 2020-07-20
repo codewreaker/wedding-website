@@ -58,8 +58,8 @@ const redirectToCheckout = async (price) => {
             quantity: 1
         }],
         mode: "payment",
-        successUrl: `https://izzyandinshi4.life//thanks-dontation`,
-        cancelUrl: `https://izzyandinshi4.life//`,
+        successUrl: `https://izzyandinshi4.life/thanks-donation/`,
+        cancelUrl: `https://izzyandinshi4.life/`,
     })
     if (error) {
         console.warn("Error:", error)
@@ -120,7 +120,7 @@ const Service = () => {
                                     <div className="icon"> <FaCreditCard /></div>
                                     <div className="content">
                                         <h3 className="title">{'Cards'}</h3>
-                                        <p>{'Card Payments / Apple Pay/ Google Pay payments can be done here '}</p>
+                                        <p>{'Card Payments can be done here'}</p>
                                         <hr/>
                                         <p>{state.description}</p>
                                         <div className='paymentArea'>
