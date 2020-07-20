@@ -23,6 +23,6 @@ export const Descriptions = {
                    ahead only where they can be done in a COVID-19 secure environment. \
                    It is also advised that the ceremonies are kept limited  with no more than 30 people. Due to this the numbers\
                    are strictly reduced to invitation only for the nuptials any updates will be communicated here',
-    'Reception': 'Due to high COVID-19 restrictions on receptions, we will update attendees on how the reception will take place',
+    'Reception': 'Due to high COVID-19 restrictions on receptions,  invited attendees only, on how the reception will take place',
     'Account Details': 'Acct Name: Israel and Nhyira \nAcct Number: 29596826 \nSort Code: 04-00-04 \nBIC: MONZGB2L'
 }
