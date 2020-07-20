@@ -4,6 +4,7 @@ import Header from "../components/header/HeaderTwo";
 import Helmet from "../components/common/Helmet";
 
 const CardPayments = () => {
+
     return (
         <Fragment>
             <Helmet pageTitle="Izzy n Inshi" />
