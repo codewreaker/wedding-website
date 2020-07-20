@@ -10,13 +10,12 @@ import { Link } from "gatsby";
 import { loadStripe } from "@stripe/stripe-js";
 
 const amtCategories = [
-    { "id": "price_1H6m8NHHhHOtLy1hLPj1RuiR", "amount": 400, "name": "Palladium", "description": "We are speechless" },
-    { "id": "price_1H6m72HHhHOtLy1hQjdF4pa4", "amount": 200, "name": "Platinum", "description": "Words cannot express our deepest gratitude" },
-    { "id": "price_1H6m5eHHhHOtLy1hYZKs6Dms", "amount": 200, "name": "Gold", "description": "We really appreciate your love and support" },
-    { "id": "price_1H6m57HHhHOtLy1hDtqwValc", "amount": 50, "name": "Silver", "description": "Your love for us is esteemable" },
-    { "id": "price_1H6m4WHHhHOtLy1hTIyNEohK", "amount": 25, "name": "Bronze", "description": "A Token of Love and Appreciation" },
-    { "id": "price_1H6m3NHHhHOtLy1hMAN15lKD", "amount": 10, "name": "Copper", "description": "A Token For The Couple" },
-    { "id": "price_1H6mvSHHhHOtLy1hyyqTvhQ2", "amount": 5, "name": "Onyx", "description": "A heart of ❤️" },
+    { "id": "price_1H6mtEHHhHOtLy1hFypQm8xM", "amount": 400, "name": "Palladium", "description": "We are speechless" },
+    { "id": "price_1H6mtLHHhHOtLy1h7dgyo3xz", "amount": 200, "name": "Platinum", "description": "Words cannot express our deepest gratitude" },
+    { "id": "price_1H6mtRHHhHOtLy1hljeZmDWZ", "amount": 100, "name": "Gold", "description": "We really appreciate your love and support" },
+    { "id": "price_1H6mtWHHhHOtLy1hi0m89byg", "amount": 50, "name": "Silver", "description": "Your love for us is esteemable" },
+    { "id": "price_1H6mtaHHhHOtLy1hGPey1ERW", "amount": 25, "name": "Bronze", "description": "A Token of Love and Appreciation" },
+    { "id": "price_1H6mtjHHhHOtLy1huhmwzCG2", "amount": 10, "name": "Copper", "description": "A heart of ❤️"}
 ]
 
 const buttonStyles = {
@@ -83,8 +82,8 @@ const ServiceList = [
 ]
 const Service = () => {
     const [state, setState] = useState({
-        id: "price_1H6mvSHHhHOtLy1hyyqTvhQ2",
-        amount: 5,
+        id: "price_1H6mtjHHhHOtLy1huhmwzCG2",
+        amount: 10,
         description: "A heart of ❤️"
     })
     const setPriceId = ({ currentTarget }) => {
@@ -120,7 +119,7 @@ const Service = () => {
                                     <div className="icon"> <FaCreditCard /></div>
                                     <div className="content">
                                         <h3 className="title">{'Cards'}</h3>
-                                        <p>{'Card Payments can be done here'}</p>
+                                        <p>{'Card Payments if the previous options do not work for you'}</p>
                                         <hr/>
                                         <p>{state.description}</p>
                                         <div className='paymentArea'>
