@@ -119,12 +119,12 @@ const Service = () => {
                                     <div className="icon"> <FaCreditCard /></div>
                                     <div className="content">
                                         <h3 className="title">{'Cards'}</h3>
-                                        <p>{'Card Payments if the previous options do not work for you'}</p>
+                                        <p>{'Card Payments if the previous options do not work for you. Select from the below Categories'}</p>
                                         <hr/>
                                         <p>{state.description}</p>
                                         <div className='paymentArea'>
                                             {/* <input style={inputStyle} onChange={({currentTarget})=>setAmt(currentTarget.value)}/> */}
-                                            <select defaultValue={state.id} onChange={setPriceId}>
+                                            <select style={{backgroundColor:'#fff'}} defaultValue={state.id} onChange={setPriceId}>
                                                 {amtCategories.map(({ id, name, amount }) => (
                                                     <option key={id} value={id}>{`${name} - £${amount}`}</option>
                                                 ))}
