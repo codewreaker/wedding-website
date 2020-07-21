@@ -49,7 +49,7 @@ const ContactOne = () => {
                                 <p className="description">
                                     {"We have decided to take this journey of 🤵🏾👰🏾 together 🙏🏾. We know this will be a very long road\
                                 and if you have any advice or just something random, please feel free to drop us a note. We are looking forward to \
-                                read them all. Oh! and no topic is off limits 😇😝"}
+                                reading them all. Oh! and no topic is off limits 😇😝"}
                                 </p>
                             </div>
                             <div className="form-wrapper">
@@ -70,7 +70,7 @@ const ContactOne = () => {
                                         placeholder="Your Message"
                                     />
                                 </label>
-                                <button className="rn-button-style--2 btn-solid" type="submit">Submit</button>
+                                <button className="rn-button-style--2 btn-solid" type="submit">Send</button>
                             </div>
                         </div>
                     </div>
