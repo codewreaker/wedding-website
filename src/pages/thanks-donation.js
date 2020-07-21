@@ -27,7 +27,6 @@ const style={
 }
 
 const Thanks = ({location}) => {
-    const name = (location.search) ? location.search.split('?name=')[1] : '';
     return (
         <Fragment>
             <Helmet pageTitle="Izzy n Inshi" />
@@ -40,7 +39,7 @@ const Thanks = ({location}) => {
                     {SlideList.map((_unused, index) => (
                         <div className="slide slide-style-2 slider-paralax d-flex align-items-center justify-content-center" key={index} id={'home'}>
                             <div className="container">
-                                <h1 style={style}>{`Thank You  for Your Donation We Really Appreciate it`}</h1>
+                                <h1 style={style}>{`Thank You for Your Donation We Really Appreciate it`}</h1>
                             </div>
                         </div>
                     ))}
