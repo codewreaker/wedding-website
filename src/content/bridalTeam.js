@@ -24,7 +24,7 @@ export default [
             "img": "/assets/images/client/kristen.jpeg"
         },
         {
-            "bio": "As an elder brother, my role was to make sure my lil bro walks this journey mnowing I got his back. When I am not busy being a big brother I like to start tech companies \n fun fact this part was written by Prophet because I refused to do a write-up 😂😂.",
+            "bio": "As an elder brother, my role was to make sure my lil bro walks this journey knowing I got his back. When I am not busy being a big brother I like to start tech companies \n fun fact this part was written by Prophet because I refused to do a write-up 😂😂.",
             "name": "Nana",
             "role": "Groomsman",
             "img": "/assets/images/client/nana.jpg"
@@ -36,13 +36,13 @@ export default [
             "img": "/assets/images/client/Didi.jpeg"
         },
         {
-            "bio": "Entrepreneurially spirited and business minded, I am into God and all things Kharis. I am from Sierria-Leone but an adopted Ghanian, and I am more than happy that Capture One is getting married",
+            "bio": "Entrepreneurially spirited and business minded, I am into God and all things Kharis. I am from Sierra Leone but an adopted Ghanaian, and I am more than happy that Capture One is getting married",
             "name": "Collin",
             "role": "Groomsman",
             "img": "/assets/images/client/collin.jpg"
         },
         {
-            "bio": "I've seen this relationship from the start and it is freat to see this Promise finally resolve (The nerds will get it), here to support Israel on his special day",
+            "bio": "I've seen this relationship from the start and it is great to see this Promise finally resolve (The nerds will get it), here to support Israel on his special day",
             "name": "Peter",
             "role": "Groomsman",
             "img": "/assets/images/client/peter.jpg"

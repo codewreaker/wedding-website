@@ -40,7 +40,7 @@ export default [
         "date": "15th OCTOBER 2019", 
         "title": "It's Official!",
         "description": "A total of 3 years had gone by since 'THE ENCOUNTER' after years of getting to know each other, working through problems together\
-                        uncertainties, prayer, starting a business and fasting together, it had become obvious these two were meant for each other. The writings had\
+                        uncertainties, prayer and fasting together, it had become obvious these two were meant for each other. The writings had\
                         been on the wall from the start. 'He hath made every thing beautiful in His time' - Ecc 3:11\
                         and it was on this day Israel asked Nhyira to be his forever"
     }
