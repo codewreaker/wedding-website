@@ -101,18 +101,18 @@
         background-size: cover;
         background-position: center;
         background-color: #0a0a0a;
-        background-image: url(/assets/images/portfolio/portfolio-1.jpg);
+        background-image: url(/assets/images/bg/bg-image-1.jpg);
         @extend %transition;
         transform: translateY(38px);
         opacity: 0;
         z-index: 1;
 
         &.image-3{
-            background-image: url(/assets/images/portfolio/portfolio-1.jpg);
+            background-image: url(/assets/images/bg/bg-image-1.jpg);
         }
 
         &.image-4 {
-            background-image: url(/assets/images/portfolio/portfolio-1.jpg);
+            background-image: url(/assets/images/bg/bg-image-1.jpg);
         }
     }
 

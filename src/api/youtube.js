@@ -1,5 +1,5 @@
 const chID = 'UCBgHS4OZb2DIqJldtWY4nrA';
-const ytAPIKey = 'AIzaSyBZsxHOCBbGs2womZqz6hX4xvbX8wlA89s';
+const ytAPIKey = 'AIzaSyBphWrSJPgSsKIqzLtRl1Wy4C3btM40sqs';
 const liveVideoGET = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${chID}&eventType=live&maxResults=1&type=video&key=${ytAPIKey}`
 
 export const getLatestLive = async () => {

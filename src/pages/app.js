@@ -29,7 +29,7 @@ const SlideList = [
 ]
 const sliderImage = "/assets/images/bg/main_bg_img.png";
 
-const image1 = "/assets/images/bg/paralax/bg-image-2.jpg";
+const image1 = "/assets/images/bg/paralax/bg-image-4.jpg";
 
 const image6 = "/assets/images/bg/paralax/bg-image-6.png";
 

@@ -9,7 +9,7 @@ import {getLatestLive, getVideoDetails} from '../api/youtube';
 import { Descriptions } from '../content/descriptions';
 import { Modal } from "../modal"
 import Giving from "../elements/Giving";
-const vidUrl = '/assets/video/izzynshivid.mp4';
+const vidUrl = '/assets/video/izzynshivid.mov';
 const posterUrl = '/assets/images/bg/bg-image-4.png'
 videoTagString({ src: vidUrl, poster: posterUrl})
 
@@ -33,7 +33,6 @@ const Watch = () => {
             const result = getVideoDetails(response)
             result && setState({...state, ...result})
         }
-
         loadInit()
     }, [])
 
