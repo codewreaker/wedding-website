@@ -18,8 +18,8 @@ const Watch = () => {
     const [isModalOpen, setIsModalOpen] = useState({ bool: false, desc: '' });
     const [state, setState] = useState({
         textPosition: 'text-left',
-        category: 'Not Live',
-        videoId: 'wqNjaSZRE0U',
+        category: 'Live',
+        videoId: 'iHSOvBH9qfU',
         title: 'Welcome To Our Livestream',
         description: 'This Livestream is going to start on the 15th of September 2020, join us then.',
         buttonText: 'Watch Livestream',
@@ -33,7 +33,7 @@ const Watch = () => {
             const result = getVideoDetails(response)
             result && setState({...state, ...result})
         }
-        loadInit()
+        //loadInit()
     }, [])
 
     const openModal = () => {
