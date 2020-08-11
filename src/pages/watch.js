@@ -19,13 +19,13 @@ const Watch = () => {
     const [state, setState] = useState({
         textPosition: 'text-left',
         category: 'Live',
-        videoId: 'iHSOvBH9qfU',
+        videoId: 'kHEciZWT09k',
         title: 'Welcome To Our Livestream',
-        description: 'This Livestream is going to start on the 15th of September 2020, join us then.',
+        description: 'This Livestream starts on the 15th of September 2020, join us then.',
         buttonText: 'Watch Livestream',
         buttonLink: '/contact'
     })
-    //X8QO8MQXDVA
+
 
     useEffect(()=>{
         const loadInit= async()=> {
