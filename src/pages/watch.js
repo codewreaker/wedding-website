@@ -16,15 +16,15 @@ videoTagString({ src: vidUrl, poster: posterUrl})
 const Watch = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState({ bool: false, desc: '' });
-    const [state, setState] = useState({
-        textPosition: 'text-left',
-        category: 'Live',
-        videoId: 'kHEciZWT09k',
-        title: 'Welcome To Our Livestream',
-        description: 'This Livestream starts on the 15th of September 2020, join us then.',
-        buttonText: 'Watch Livestream',
-        buttonLink: '/contact'
-    })
+        const [state, setState] = useState({
+            textPosition: 'text-left',
+            category: 'Live',
+            videoId: 'kHEciZWT09k',
+            title: 'Welcome To Our Livestream',
+            description: 'This Livestream starts on the 15th of September 2020, join us then.',
+            buttonText: 'Watch Livestream',
+            buttonLink: '/contact'
+        })
 
 
     useEffect(()=>{
