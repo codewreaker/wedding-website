@@ -5,32 +5,17 @@ import BrandTwo from "../elements/BrandTwo";
 import Header from "../components/header/HeaderTwo";
 import ModalVideo from 'react-modal-video';
 import { videoTagString, VideoTag } from 'react-video-tag';
-import {getLatestLive, getVideoDetails} from '../api/youtube';
 import { Descriptions } from '../content/descriptions';
 import { Modal } from "../modal"
 import Giving from "../elements/Giving";
+import state from '../../site/settings/streamDetails.json';
 const vidUrl = '/assets/video/izzynshivid.mov';
 const posterUrl = '/assets/images/bg/bg-image-4.png';
-import RR from '/site/settings/streamDetails.json';
 videoTagString({ src: vidUrl, poster: posterUrl})
 
 const Watch = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState({ bool: false, desc: '' });
-        const [state, setState] = useState({
-            textPosition: 'text-left',
-            category: 'Live',
-            videoId: 'kHEciZWT09k',
-            title: 'Welcome To Our Livestream',
-            description: 'This Livestream starts on the 15th of September 2020, join us then.',
-            buttonText: 'Watch Livestream'
-        })
-
-
-    useEffect(()=>{
-        console.log(RR)
-    }, [])
-
     const openModal = () => {
         setIsOpen(true)
     }
