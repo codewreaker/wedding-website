@@ -6,13 +6,13 @@ media_folder: public/assets
 public_folder: /public
 
 collections:
-  - label: "Stream Settings a"
-    name: "Stream Settings b"
+  - label: "Stream Settings"
+    name: "Stream Settings"
     files:
-      - label: "Stream Settings c"
+      - label: "Stream Settings {{year}}-{{month}}-{{day}}"
         name: "about"
         file: "site/settings/streamDetails.json"
-        slug: "{{slug}}"
+        slug: "{{year}}-{{month}}-{{day}}"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
