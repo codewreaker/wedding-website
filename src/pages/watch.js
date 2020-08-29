@@ -10,7 +10,8 @@ import { Descriptions } from '../content/descriptions';
 import { Modal } from "../modal"
 import Giving from "../elements/Giving";
 const vidUrl = '/assets/video/izzynshivid.mov';
-const posterUrl = '/assets/images/bg/bg-image-4.png'
+const posterUrl = '/assets/images/bg/bg-image-4.png';
+import RR from '/site/settings/streamDetails.json';
 videoTagString({ src: vidUrl, poster: posterUrl})
 
 const Watch = () => {
@@ -22,18 +23,12 @@ const Watch = () => {
             videoId: 'kHEciZWT09k',
             title: 'Welcome To Our Livestream',
             description: 'This Livestream starts on the 15th of September 2020, join us then.',
-            buttonText: 'Watch Livestream',
-            buttonLink: '/contact'
+            buttonText: 'Watch Livestream'
         })
 
 
     useEffect(()=>{
-        const loadInit= async()=> {
-            const response = await getLatestLive();
-            const result = getVideoDetails(response)
-            result && setState({...state, ...result})
-        }
-        //loadInit()
+        console.log(RR)
     }, [])
 
     const openModal = () => {
@@ -61,7 +56,7 @@ const Watch = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-8">
-                                <div className={`inner ${state.textPosition}`}>
+                                <div className={`inner text-left`}>
                                     {state.category ? <span>{state.category}</span> : ''}
                                     {state.title ? <h1 className="title">{state.title}</h1> : ''}
                                     {state.description ? <p className="description">{state.description}</p> : ''}

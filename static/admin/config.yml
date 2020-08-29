@@ -15,11 +15,7 @@ collections:
         slug: "{{slug}}"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          - {label: Description, name: description, widget: string}
+          - {label: Video ID, name: videoId, widget: string}
+          - {label: Live, name: category, widget: string}
+          - {label: Button Label, name: buttonText, widget: string}
