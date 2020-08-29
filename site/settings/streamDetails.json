@@ -1,5 +1,5 @@
 {
-  "title": "abena",
+  "title": "Israel and Nhyira Wedding izzynshilovely",
   "intro": "fooriwaa",
   "team": [
     {
@@ -7,5 +7,9 @@
       "position": "Kwame",
       "photo": "/public/izznshilovely_b.jpg"
     }
-  ]
+  ],
+  "description": "This is where the json will be picked from",
+  "videoId": "fsnovsnvoidnsvsdvds",
+  "category": "Live",
+  "buttonText": "Watch Now"
 }
