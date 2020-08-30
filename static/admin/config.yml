@@ -9,8 +9,8 @@ collections:
   - label: "Stream Settings"
     name: "Stream Settings"
     files:
-      - label: "Stream Settings {{year}}-{{month}}-{{day}}"
-        name: "about"
+      - label: "Stream Settings Entry"
+        name: "settings"
         file: "site/settings/streamDetails.json"
         slug: "{{year}}-{{month}}-{{day}}"
         fields:
