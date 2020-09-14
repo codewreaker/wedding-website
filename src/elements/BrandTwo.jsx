@@ -30,7 +30,7 @@ class BrandTwo extends Component {
                         <a target='_blank' href="https://jayrayghartey.com/"><img src="/assets/images/brand/jayray.png" alt="JayRay" /></a>
                     </li>
                     <li>
-                        <a target='_blank' href="https://www.instagram.com/wedding_notes/?hl=en"><img src="/assets/images/brand/nanaklogo.png" alt="WeddingNotes" /></a>
+                        <a target='_blank' href="https://www.instagram.com/wedding_notes/?hl=en"><img src="/assets/images/brand/jayray.png" alt="WeddingNotes" /></a>
                     </li>
                 </ul>
             </React.Fragment>
