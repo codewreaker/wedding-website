@@ -12,30 +12,6 @@ export default [
             "img": "/assets/images/client/princess.jpeg"
         },
         {
-            "bio": "Michael aka MAPD is a versatile sporty and handy young man. Aside my cute nature, I tend to sometimes talk too which kinda counteracts my cuteness😂😂😂. One of my daily extrinsic motivations is to make someone smile and that's why I like to help people.",
-            "name": "Michael",
-            "role": "Groomsman",
-            "img": "/assets/images/client/michael2.jpeg"
-        },
-        {
-            "bio": "As the 'last baby' I washed dishes and swept for all my siblings. After they got married and made a wonderful family, guess what? My services were needed again! I must say, Israel and Nhyira joining my customers, has made me elated. Why? Because I am no ordinary vacuum cleaner and dishwasher, I am traveling the world, from Ghana to Switzerland to London.  I believe this is what we call global impact😌",
-            "name": "Kristen",
-            "role": "Bridesmaid",
-            "img": "/assets/images/client/kristen.jpeg"
-        },
-        {
-            "bio": "As an elder brother, my role was to make sure my lil bro walks this journey knowing I got his back. When I am not busy being a big brother I like to start tech companies \n fun fact this part was written by Prophet because I refused to do a write-up 😂😂.",
-            "name": "Nana",
-            "role": "Groomsman",
-            "img": "/assets/images/client/nana.jpg"
-        },
-        {
-            "bio": "I was originally born in Denmark, my mother said we were going on holiday to London when I was around 9. Well I’m still on holiday 😂",
-            "name": "Didi",
-            "role": "Bridesmaid",
-            "img": "/assets/images/client/Didi.jpeg"
-        },
-        {
             "bio": "Entrepreneurially spirited and business minded, I am into God and all things Kharis. I am from Sierra Leone but an adopted Ghanaian, and I am more than happy that Capture One is getting married",
             "name": "Collin",
             "role": "Groomsman",
@@ -46,11 +22,5 @@ export default [
             "name": "Peter",
             "role": "Groomsman",
             "img": "/assets/images/client/peter.jpg"
-        },
-        {
-            "bio": "'I am not African because I was born in Africa, I am African because Africa was born in me'. - Dr Kwame Nkrumah. If you know me, you know the zeal I have when it comes being a part of creating a new narrative of Africa, by way of Ghana. I am always ready to boldly uphold and defend my motherland and help out which ever way I can.",
-            "name": "J A C Q U È L I N E",
-            "role": "Bridesmaid",
-            "img": "/assets/images/client/jacqui.jpg"
         }
     ]
